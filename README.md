@@ -44,7 +44,7 @@ rm -rf static/
 
 rm -rf target/dx/
 
-dx build --release --ssg
+dx build --platform web --release --ssg
 
 mkdir dist/
 
