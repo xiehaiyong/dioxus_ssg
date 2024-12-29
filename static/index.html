@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>dioxus_ssg</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+  <link rel="stylesheet" href="assets/tailwind.css">
+<link rel="stylesheet" href="assets/styling/blog.css">
+<link rel="stylesheet" href="assets/styling/echo.css">
+<link rel="stylesheet" href="assets/styling/main.css">
+<link rel="stylesheet" href="assets/styling/navbar.css">
+<link rel="preload" href="/./wasm/dioxus_ssg_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+            <link rel="preload" href="/./wasm/dioxus_ssg.js" as="script">
+            <link rel="icon" href="/assets/favicon-78763c6c4cb3a95e.ico"/><link rel="stylesheet" href="/assets/main-f4017960272414e6.css"/><link rel="stylesheet" href="/assets/tailwind-75479b18add1d0fc.css"/><link rel="stylesheet" href="/assets/navbar-1d876edb67fd58fe.css"/><link rel="stylesheet" href="/assets/echo-3a88efb2926faadd.css"/></head>
+  <body>
+    <div id="main"><script>window.hydrate_queue=[];window.dx_hydrate=(id,data)=>{const decoded=atob(data),bytes=Uint8Array.from(decoded,(c)=>c.charCodeAt(0));if(window.hydration_callback)window.hydration_callback(id,bytes);else window.hydrate_queue.push([id,bytes])};
+</script><!--placeholder0--><!--placeholder1--><!--placeholder2--><!--placeholder3--><div id="navbar" data-node-hydration="4"><a href="/" aria-current="page" data-node-hydration="5,click:1"><!--node-id6-->Home<!--#--></a><a href="/blog/1" data-node-hydration="7,click:1"><!--node-id8-->Blog<!--#--></a></div><div id="hero" data-node-hydration="9"><img src="/assets/header-773d6e50d063942a.svg" id="header" data-node-hydration="10"/><div id="links"><a href="https://dioxuslabs.com/learn/0.6/">📚 Learn Dioxus</a><a href="https://dioxuslabs.com/awesome">🚀 Awesome Dioxus</a><a href="https://github.com/dioxus-community/">📡 Community Libraries</a><a href="https://github.com/DioxusLabs/sdk">⚙️ Dioxus Development Kit</a><a href="https://marketplace.visualstudio.com/items?itemName=DioxusLabs.dioxus">💫 VSCode Extension</a><a href="https://discord.gg/XgGxMSkvUM">👋 Community Discord</a></div></div><!--placeholder11--><div id="echo" data-node-hydration="12"><h4>ServerFn Echo</h4><input placeholder="Type here to echo..." data-node-hydration="13,input:1"/><!--placeholder14--></div><script>window.initial_dioxus_hydration_data="hoEY9oEY9YEY9YEY9YEY9YEY9Q==";</script></div>
+  <script>
+            // We can't use a module script here because we need to start the script immediately when streaming
+            import("/./wasm/dioxus_ssg.js").then(
+                ({ default: init }) => {
+                init("/./wasm/dioxus_ssg_bg.wasm").then((wasm) => {
+                    if (wasm.__wbindgen_start == undefined) {
+                    wasm.main();
+                    }
+                });
+                }
+            );
+            </script>
+            
+            </body>
+</html>

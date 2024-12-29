@@ -1,0 +1,38 @@
+[application]
+asset_dir = "assets"
+default_platform = "web"
+hot_reload = true
+# App (Project) Name
+name = "dioxus_ssg"
+out_dir = "dist"
+
+
+[web.app]
+
+# HTML title tag content
+title = "dioxus_ssg"
+
+# include `assets` in web platform
+[web.resource]
+
+# Additional CSS style files
+style = ["assets/tailwind.css","assets/styling/blog.css","assets/styling/echo.css","assets/styling/main.css","assets/styling/navbar.css"]
+
+# Additional JavaScript files
+script = []
+
+[web.resource.dev]
+style = ["assets/tailwind.css","assets/styling/blog.css","assets/styling/echo.css","assets/styling/main.css","assets/styling/navbar.css"]
+
+# Javascript code file
+# serve: [dev-server] only
+script = []
+
+[web.wasm_opt]
+# The level wasm-opt should target. z is the smallest. 4 is the fastest.
+level = "4"
+
+[web.watcher]
+index_on_404 = true
+reload_html = true
+watch_path = ["assets", "src"]
