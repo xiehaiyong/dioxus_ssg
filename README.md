@@ -48,7 +48,7 @@ dx build --platform web --release --ssg
 
 mkdir dist/
 
-cp -r target/dx/dioxus-ssg/release/web/public/* dist/
+cp -r target/dx/dioxus_ssg/release/web/public/* dist/
 
 cp -r static/* dist/
 
